@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "@joi/date": "^2.1.1",
     "@prisma/client": "^5.20.0",
     "@types/bcrypt": "^5.0.2",
@@ -48,5 +49,9 @@
     "prisma": "^5.20.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "type": "module",
+  "engines": {
+    "node": "20.x"
   }
 }

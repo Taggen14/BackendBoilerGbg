@@ -39,3 +39,5 @@ const SERVER_PORT = process.env.SERVER_PORT || 1337;
 app.listen(SERVER_PORT, () => {
   console.log("Server started on: " + SERVER_PORT);
 });
+
+export default app;
