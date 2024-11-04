@@ -1,9 +1,9 @@
 import express from "express";
 import { Request, Response, NextFunction } from "express";
-import { RequestCampaign } from "../types/types"
+import { RequestCampaign } from "../types/types.js"
 
 // PrismaClient
-import { prisma } from "../prismaclient/prismaclient"
+import { prisma } from "../prismaclient/prismaclient.js"
 
 const router = express.Router()
 

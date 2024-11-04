@@ -1,6 +1,6 @@
 import passport from 'passport';
 import { Strategy as GitHubStrategy } from 'passport-github2';
-import { UserProfile } from '../types/types';
+import { UserProfile } from '../types/types.js';
 import dotenv from 'dotenv';
 
 dotenv.config();

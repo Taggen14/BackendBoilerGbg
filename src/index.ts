@@ -4,16 +4,17 @@ import session from "express-session";
 import dotenv from "dotenv";
 import cors from "cors";
 import './authStrategies/localStrategy'
-import { corsOptions } from "./config";
+import { corsOptions } from "./config.js";
 
 //routes
-import { campaignRoutes } from "./routes/campaign";
-import authRouter from "./routes/auth";
-import { router as userRouter } from "./routes/user";
+import { campaignRoutes } from "./routes/campaign.js";
+import authRouter from "./routes/auth.js";
+import { router as userRouter } from "./routes/user.js";
 
 dotenv.config();
 
 const app = express();
+
 
 app.use(cors(corsOptions));
 // gitHubStrategy
