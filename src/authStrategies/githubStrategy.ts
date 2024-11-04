@@ -9,7 +9,7 @@ dotenv.config();
 passport.use(new GitHubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID as string,
   clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
-  callbackURL: "http://localhost:5173/"
+  callbackURL: "https://main.d2zbjg7v8bstm4.amplifyapp.com"
 },
   (accessToken: string, refreshToken: string, profile: any, done: (err: any, user?: UserProfile | null) => void) => {
     try {
