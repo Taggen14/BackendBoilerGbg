@@ -35,6 +35,8 @@ app.use("/campaign", campaignRoutes);
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
 
+console.log(process.env.VERCEL, "env vercel")
+
 if (process.env.VERCEL !== "1") {
   const PORT = process.env.PORT || 1337;
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
