@@ -6,7 +6,7 @@ dotenv.config();
 // cors settings  
 const allowedOrigins =
 process.env.NODE_ENV === "production"
-  ? ["add-your-frontend url-here"]
+  ? ["https://main.d2zbjg7v8bstm4.amplifyapp.com"]
   : ["http://localhost:5173"];
 
 export const corsOptions: cors.CorsOptions = {
