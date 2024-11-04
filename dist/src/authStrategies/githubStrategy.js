@@ -6,7 +6,7 @@ dotenv.config();
 passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "http://localhost:5173/"
+    callbackURL: "https://main.d2zbjg7v8bstm4.amplifyapp.com"
 }, (accessToken, refreshToken, profile, done) => {
     try {
         // Logga profil för felsökning

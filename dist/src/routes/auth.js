@@ -1,7 +1,7 @@
 import { Router } from "express";
 import passport from "passport";
-import "../authStrategies/githubStrategy";
-import "../authStrategies/localStrategy";
+import "../authStrategies/githubStrategy.js";
+import "../authStrategies/localStrategy.js";
 const app = Router();
 app.get("/", passport.authenticate("github"));
 app.get("/callback", passport.authenticate("github", { failureRedirect: "/" }), function (req, res) {
