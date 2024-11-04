@@ -1,5 +1,4 @@
-import express from "express";
-import { Request, Response, NextFunction } from "express";
+import express, { Request } from "express";
 import { RequestCampaign } from "../types/types.js"
 
 // PrismaClient
@@ -95,7 +94,7 @@ router.delete("/:id", async (req, res) => {
                 id: id
             }
         });
-        res.status(200).json({ message: `campaign: "${deleteCampaign.companyName}" where deleted` });   
+        res.status(200).json({ message: `campaign: "${deleteCampaign.companyName}" where deleted` });
     }
     catch (error) {
         res.status(400).json({ error: `Unable to delete campaign with id: ${id}` });

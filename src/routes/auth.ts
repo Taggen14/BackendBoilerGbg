@@ -1,8 +1,8 @@
 import { Router } from "express";
 import passport from "passport";
-import "../authStrategies/githubStrategy";
-import "../authStrategies/localStrategy";
-import { Request, Response, NextFunction } from "express";
+import "../authStrategies/githubStrategy.js";
+import "../authStrategies/localStrategy.js";
+import { Request, Response } from "express";
 
 const app = Router();
 
