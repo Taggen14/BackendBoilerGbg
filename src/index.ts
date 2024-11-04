@@ -35,10 +35,9 @@ app.use("/campaign", campaignRoutes);
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
 
-const SERVER_PORT = process.env.SERVER_PORT || 1337;
-
-app.listen(SERVER_PORT, () => {
-  console.log("Server started on: " + SERVER_PORT);
-});
+if (process.env.VERCEL !== "1") {
+  const PORT = process.env.PORT || 1337;
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
 
 export default app;
